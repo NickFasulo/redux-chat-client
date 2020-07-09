@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import './Navbar.css';
 
-class TopNav extends Component {
+class Navbar extends Component {
   render() {
     return (
       <ul className="nav__ul">
@@ -10,8 +9,8 @@ class TopNav extends Component {
           <NavLink
             to="/user-profile"
             className="navbar"
-            activeStyle={{ fontWeight: 'bold' }}
-            activeClassName="selected"
+            
+            
           >
             {this.props.username}
           </NavLink>
@@ -20,8 +19,8 @@ class TopNav extends Component {
           <NavLink
             to="/login"
             className="navbar"
-            activeStyle={{ fontWeight: 'bold' }}
-            activeClassName="selected"
+            
+            
             onClick={() => {}}
           >
             logout
@@ -32,4 +31,4 @@ class TopNav extends Component {
   }
 }
 
-export default TopNav;
+export default Navbar;

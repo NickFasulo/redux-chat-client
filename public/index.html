@@ -16,5 +16,28 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: 'AIzaSyAIBMSsVwEkgcKkoFqJhH93CP1aWv4fM-8',
+        authDomain: 'redux-chat-app-a58f9.firebaseapp.com',
+        databaseURL: 'https://redux-chat-app-a58f9.firebaseio.com',
+        projectId: 'redux-chat-app-a58f9',
+        storageBucket: 'redux-chat-app-a58f9.appspot.com',
+        messagingSenderId: '221221277549',
+        appId: '1:221221277549:web:49c97cc139158695a55464',
+        measurementId: 'G-FKJ6D4DK4F',
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>
